@@ -10,7 +10,7 @@ public class Test {
 		
 		do {
 			
-			System.out.println("Introduce tus mensages, o pulsa . Para terminar:");
+			System.out.println("Introduce tus mensajes, o pulsa . Para terminar:");
 			// Completar
 			try {
 				cadena = leerLineaOK(sc);
