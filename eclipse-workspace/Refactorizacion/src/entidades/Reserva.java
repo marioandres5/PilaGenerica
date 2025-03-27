@@ -1,4 +1,7 @@
 package entidades;
+
+import java.time.LocalDateTime;
+
 /**
  * @author Mario Andres
  */
@@ -7,7 +10,7 @@ package entidades;
  */
 public class Reserva {
     private int idPista;
-    private String fecha;
+    private LocalDateTime fecha;
     private int duracion;
 
     /**
@@ -17,7 +20,7 @@ public class Reserva {
      * @param fecha    Fecha de la reserva en formato "YYYY-MM-DD".
      * @param duracion Duración de la reserva en minutos.
      */
-    public Reserva(int idPista, String fecha, int duracion) {
+    public Reserva(int idPista, LocalDateTime fecha, int duracion) {
         this.idPista = idPista;
         this.fecha = fecha;
         this.duracion = duracion;
@@ -37,7 +40,7 @@ public class Reserva {
      *
      * @return Fecha de la reserva en formato "YYYY-MM-DD".
      */
-    public String getFecha() {
+    public LocalDateTime getFecha() {
         return fecha;
     }
 
